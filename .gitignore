@@ -31,5 +31,6 @@
 *.out
 *.app
 
-# Recommended Build Directory
+# Build directories
 build/
+autom4te.cache/
