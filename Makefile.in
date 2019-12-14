@@ -44,7 +44,7 @@ prefix = @prefix@
 
 OUTPUT = libpipeworks-cxx.so
 ARCHIVE_OUTPUT = libpipeworks-cxx.a
-OBJECTS = 
+OBJECTS = $(OUTDIR)/engine.o
 
 all: $(TARGETS)
 
