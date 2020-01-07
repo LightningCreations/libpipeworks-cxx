@@ -2,6 +2,6 @@
 
 using namespace pipeworks;
 
-Pipeworks::Pipeworks() {
+Engine::Engine() {
     // Initialize
 }
