@@ -6,15 +6,15 @@ Engine::Engine() {
     // Initialize
 }
 
-Engine::init() {
+void Engine::init() {
     // Initialize immediately prior to starting
 }
 
-Engine::start() {
+void Engine::start() {
     // Start the Engine thread
 }
 
-Engine::join() {
+void Engine::join() {
     // Wait for the Engine thread to finish
 }
 
