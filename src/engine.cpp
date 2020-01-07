@@ -5,3 +5,7 @@ using namespace pipeworks;
 Engine::Engine() {
     // Initialize
 }
+
+Pipeworks::~Pipeworks(){
+    // Cleanup
+}
