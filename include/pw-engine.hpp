@@ -19,6 +19,6 @@ namespace pipeworks {
         SDL_Renderer *renderer;
         SDL_Texture *texture;
         uint8_t *pixels;
-    }
+    };
 }
 #endif
