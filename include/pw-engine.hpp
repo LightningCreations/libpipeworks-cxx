@@ -1,7 +1,7 @@
 #ifndef PW_ENGINE_HPP
 #define PW_ENGINE_HPP
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 namespace pipeworks {
     class Engine {
