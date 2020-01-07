@@ -6,6 +6,10 @@ Engine::Engine() {
     // Initialize
 }
 
+void Engine::setGame(Game *game) {
+    // Set our game
+}
+
 void Engine::init() {
     // Initialize immediately prior to starting
 }

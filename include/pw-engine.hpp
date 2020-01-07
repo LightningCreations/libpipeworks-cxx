@@ -3,6 +3,8 @@
 
 #include <SDL.h>
 
+#include "pw-game.hpp"
+
 namespace pipeworks {
     class Engine {
     public:
@@ -11,6 +13,7 @@ namespace pipeworks {
         Engine(Engine&&) = delete;
         Engine& operator=(const Engine&) = delete;
         Engine& operator=(Engine&&) = delete;
+        void setGame(Game *game);
         void init();
         void start();
         void join();
