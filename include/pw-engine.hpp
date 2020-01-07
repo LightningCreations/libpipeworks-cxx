@@ -13,6 +13,7 @@ namespace pipeworks {
         Engine& operator=(Engine&&) = delete;
         void init();
         void start();
+        void join();
         ~Engine();
     private:
         SDL_Window *window;
