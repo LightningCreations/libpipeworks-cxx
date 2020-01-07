@@ -3,7 +3,9 @@
 
 #include <SDL.h>
 
-#include "pw-game.hpp"
+#include <pw-forward.hpp>
+
+#include <memory>
 
 namespace pipeworks {
     class Engine {
@@ -13,16 +15,16 @@ namespace pipeworks {
         Engine(Engine&&) = delete;
         Engine& operator=(const Engine&) = delete;
         Engine& operator=(Engine&&) = delete;
-        void setGame(Game *game);
+        void setGame(Game& game);
         void init();
         void start();
         void join();
         ~Engine();
     private:
-        SDL_Window *window;
-        SDL_Renderer *renderer;
-        SDL_Texture *texture;
-        uint8_t *pixels;
+        SDL_Window* window;
+        SDL_Renderer* renderer;
+        SDL_Texture* texture;
+        uint8_t* pixels;
     };
 }
 #endif

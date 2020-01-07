@@ -1,7 +1,7 @@
 #ifndef PW_GAME_HPP
 #define PW_GAME_HPP
 
-#include "pw-engine.hpp"
+#include <pw-engine.hpp>
 
 namespace pipeworks {
     class Game {
@@ -11,10 +11,12 @@ namespace pipeworks {
         Game(Game&&) = delete;
         Game& operator=(const Game&) = delete;
         Game& operator=(Game&&) = delete;
-        virtual void loadState(Engine*) = delete;
-        virtual void doneLoading(Engine*) = delete;
-        ~Game();
+        virtual void loadState(Engine&) = 0;
+        virtual void doneLoading(Engine&) = 0;
+    protected:
+        ~Game();  
     private:
+
         SDL_Window *window;
         SDL_Renderer *renderer;
         SDL_Texture *texture;

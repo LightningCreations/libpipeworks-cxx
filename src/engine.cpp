@@ -6,7 +6,7 @@ Engine::Engine() {
     // Initialize
 }
 
-void Engine::setGame(Game *game) {
+void Engine::setGame(Game& game) {
     // Set our game
 }
 
